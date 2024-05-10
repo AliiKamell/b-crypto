@@ -17,7 +17,7 @@ const StickyHeadTable = () => {
 
     useEffect(() => {
         fetchCoins(); // Fetch coins when the component mounts
-    }, []); // Empty dependency array ensures it runs only once when mounted
+    }, [fetchCoins]); // Empty dependency array ensures it runs only once when mounted
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
