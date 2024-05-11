@@ -39,9 +39,8 @@ function Home() {
     const store = homeStore()
 
     React.useEffect(() => {
-        store.fetchCoins()
+        store.fetchTrendingCoins()
     }, [store])
-
     return (
         <main className='main'>
             <section className='sec-1 bg-1'>
@@ -84,7 +83,7 @@ function Home() {
 
             <section className='sec-3 bg-3'>
                 <div className='head-3'>
-                    <h2>Treding Coins</h2>
+                    <h2>Top Coins</h2>
                 </div>
                 <div className='table'>
                     <StickyHeadTable />

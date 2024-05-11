@@ -363,6 +363,7 @@ font-size: 105%;
 
 .coin-logo{
   cursor: pointer;
+  width: 35px;
 }
 
 .footer{

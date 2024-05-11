@@ -13,11 +13,11 @@ const columns = [
 const StickyHeadTable = () => {
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
-    const { coins, fetchCoins } = homeStore();
+    const { coins, fetchTrendingCoins } = homeStore();
 
     useEffect(() => {
-        fetchCoins(); // Fetch coins when the component mounts
-    }, [fetchCoins]); // Empty dependency array ensures it runs only once when mounted
+        fetchTrendingCoins();
+    }, [fetchTrendingCoins]);
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -64,7 +64,7 @@ const StickyHeadTable = () => {
                 </Table>
             </TableContainer>
             <TablePagination
-                rowsPerPageOptions={[10, 15]}
+                rowsPerPageOptions={[10, 20, 50]}
                 component="div"
                 count={coins.length}
                 rowsPerPage={rowsPerPage}
