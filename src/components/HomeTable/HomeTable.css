@@ -1,0 +1,71 @@
+
+.table {
+    max-width: 100%;
+}
+
+.css-i02g0k-MuiTableCell-root{
+    background-color: #040825;
+    color: white;
+}
+
+.css-1q1u3t4-MuiTableRow-root{
+    background-color: #040825;
+    color: white;
+}
+
+.css-y8ay40-MuiTableCell-root{
+    background-color: #040825;
+    color: white;
+}
+
+.css-177gid-MuiTableCell-root{
+    background-color: #040825;
+    color: white;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+    background-color: #040825;
+    color: white;
+}
+
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon{
+    color: white;
+}
+
+.css-1fw5qro-MuiPaper-root{
+    background-color: #040825;
+}
+
+#table-cell{
+    color: white;
+    background-color: #040825;
+}
+
+#table-pagination{
+    background-color:  #040825;
+    color: red;
+}
+
+#table-head{
+    background-color: #040825;
+    color: white;
+}
+
+.img-table{
+    height: 35px;
+}
+
+#coin-name{
+    color: white;
+}
+
+#coin-symbol{
+    color: white;
+}
+#coin-price{
+    color: white;
+}
+#coin-mc{
+    color: white;
+}
+

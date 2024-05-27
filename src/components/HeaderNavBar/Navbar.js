@@ -29,7 +29,7 @@ function Navbar() {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="fixed" style={{ backgroundColor: scroll ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.5)' }}>
                     <Toolbar className='toolbar'>
-                        <Link to='/' className='logo' id='logo' variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        <Link to='/' className='logo' id='logo' >
                             <BsCurrencyBitcoin className='logo-1' /> | Crypto
                         </Link>
                         <div className='btn'>
@@ -37,7 +37,7 @@ function Navbar() {
                             <Link className='btn-nav' to='about'>About</Link>
                             <Link className='btn-nav' to='pricing'>Pricing</Link>
                             <Link className='btn-nav' to='top-gainers'>Top Gainers</Link>
-                            <Link className='btn-nav' to='top-lossers'>Top Losers</Link>
+                            <Link className='btn-nav' to='top-losers'>Top Losers</Link>
                         </div>
                     </Toolbar>
                 </AppBar>

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { MdCurrencyBitcoin } from "react-icons/md";
 import { FaChartLine } from "react-icons/fa";
 import { PiCurrencyEthThin } from "react-icons/pi";
 import { MdOutlineCandlestickChart } from "react-icons/md";
-import homeStore from './HomeStore';
+import HomeStore from './HomeStore';
 import StickyHeadTable from '../../components/HomeTable/HomeTable';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCoin } from '../../store/actions/coin-action';
+
+
 
 const cardData = [
     {
@@ -36,11 +40,7 @@ const cardData = [
 
 
 function Home() {
-    const store = homeStore()
 
-    React.useEffect(() => {
-        store.fetchTrendingCoins()
-    }, [store])
     return (
         <main className='main'>
             <section className='sec-1 bg-1'>
