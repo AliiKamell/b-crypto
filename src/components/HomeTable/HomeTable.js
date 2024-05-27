@@ -90,7 +90,7 @@ export default function StickyHeadTable() {
             {coins
               .map((coin) => {
                 return (
-                  <TableRow  role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
+                  <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
                     <TableCell >
                       <img src={coin.image} alt='coin-img' className='img-table' />
                     </TableCell>
