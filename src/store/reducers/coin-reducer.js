@@ -1,6 +1,4 @@
-import { combineReducers } from "redux";
 import { GET_COINS, GET_NEWS } from "../actions/coin-action";
-
 
 
 
