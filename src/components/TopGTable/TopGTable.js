@@ -89,7 +89,6 @@ export default function TopGainersTable() {
           count={0}
           rowsPerPage={0}
           page={0}
-          id='table-footer'
         />
       </div>
     </Paper>
