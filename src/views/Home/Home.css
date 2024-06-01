@@ -1,0 +1,14 @@
+.top100T{
+background-color: #040825;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding-bottom: 40px;
+}
+
+.p-top100{
+    color: white;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    max-width: 75%;
+}

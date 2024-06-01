@@ -1,0 +1,12 @@
+.top-table{
+    color: white;
+}
+
+#table-head{
+    background-color: #040825;
+    font-weight: bold;
+}
+
+#table-cell{
+    color: white;
+}

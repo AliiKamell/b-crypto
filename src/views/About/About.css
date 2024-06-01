@@ -12,7 +12,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: auto;
+    height: 100%;
     color: white;
     align-content: center;
     flex-wrap: wrap;
@@ -64,9 +64,10 @@ hr{
 
 .input-about{
     align-self: flex-start;
-    padding-left: 80px;
     margin-bottom: 30px;
-    max-width: 100%;
+    max-width: 300px;
+    margin-left: 40px;
+
 }
 
 .btn-about{
@@ -75,3 +76,6 @@ hr{
     font-size: 12px;
     font-weight: bold;
 }
+
+.textarea{
+max-width: 80%;}

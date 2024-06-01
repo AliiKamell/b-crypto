@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { MdCurrencyBitcoin } from "react-icons/md";
 import { FaChartLine } from "react-icons/fa";
 import { PiCurrencyEthThin } from "react-icons/pi";
 import { MdOutlineCandlestickChart } from "react-icons/md";
-import HomeStore from './HomeStore';
-import StickyHeadTable from '../../components/HomeTable/HomeTable';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchCoin } from '../../store/actions/coin-action';
+import Top100Table from '../../components/HomeTable/HomeTable';
 
 
 
@@ -50,14 +46,14 @@ function Home() {
                 <div className='subtitle-home-1'>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quas iste veniam. Est neque explicabo perspiciatis voluptatem sed corporis soluta necessitatibus magnam! Corporis excepturi quos molestias quod saepe explicabo ex?
                 </div>
-                <div className='btn-home'>
+                <div className='btn-home' id='btn'>
                     <a href="/"><button className="bn632-hover bn20">TRADE NOW</button></a>
                     <a href="/"><button className="btn-home-1">VIEW PRICING</button></a>
                 </div>
             </section>
             <section className='sec-2 bg-2'>
                 <div className='title-home-2'>
-                    <h1>About Crypto</h1>
+                    <h1>About B-Crypto</h1>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quas iste veniam. Est neque explicabo perspiciatis voluptatem sed corporis soluta necessitatibus magnam! Corporis excepturi quos molestias quod saepe explicabo ex?
                     </p>
@@ -82,13 +78,13 @@ function Home() {
             </section>
 
             <section className='sec-3 bg-3'>
-                <div className='head-3'>
-                    <h2>Top Coins</h2>
-                </div>
-                <div className='table'>
-                    <StickyHeadTable />
-                </div>
+                <h2 className='head-3'>Top Coins</h2>
+
             </section>
+            <div className='top100T'>
+                <Top100Table />
+                <p className='p-top100'>The table above highlights the 100 top cryptocurrencies based on their market cap</p>
+            </div>
         </main >
     )
 }

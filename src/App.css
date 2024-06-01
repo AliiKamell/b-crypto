@@ -16,7 +16,7 @@
 .toolbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* Center the items horizontally */
+  justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -52,14 +52,6 @@
   font-size: 15px;
   flex-wrap: nowrap;
 }
-
-/* .btn-nav:hover {
-  border: 1px solid white; 
-  background-color: white;
-  color: #28265a;
-  padding-left: 10px;
-  padding-right: 10px;
-} */
 
 
 
@@ -137,12 +129,12 @@
   }
 
 
-  .btn-home{
+  #btn{
     margin-top: 150px;
     padding-bottom: 190px;
     display: flex;
-    /* justify-content: center; */
-    padding-left: 0px;
+    justify-content: space-around;
+    padding-left: 0;
   }
 
 }
@@ -159,6 +151,7 @@ padding-left: 40px;
   display: column;
   cursor: pointer;
   color: white;
+  margin-left: 20px;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.5); 
   width: 160px;
@@ -180,7 +173,6 @@ padding-left: 40px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 0px 30px 0px 0px;
   height: 55px;
   text-align:center;
   border: none;
@@ -215,10 +207,7 @@ padding-left: 40px;
 
 
 /* styling the second section */
-/* .sec-2{
-  display: flex;
-  flex-direction: row;
-} */
+
 
 .bg-2{
   background-image: var(--bg-home-image-2);
@@ -228,11 +217,7 @@ padding-left: 40px;
   min-height: 100vh;
 }
 
-/* .sec-2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+
 .title-home-2{
   display: flex;
   flex-direction: column;
@@ -270,7 +255,7 @@ padding-left: 40px;
 
 @media (max-width: 1355px) {
   .head-2 {
-    text-align: center; /* On screens smaller than 768px (typical mobile screens), center align */
+    text-align: center;
     margin-left: -10px;
   }
 }
@@ -332,7 +317,7 @@ font-size: 105%;
   background-color: #040825;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  /* width: 100%; */
   height: 150%;
 }
 
@@ -366,11 +351,6 @@ font-size: 105%;
   font-weight: bold;
 }
 
-.trending-table{
-  background-color: transparent;
-}
 
-.coin-logo{
-  cursor: pointer;
-  width: 35px;
-}
+
+

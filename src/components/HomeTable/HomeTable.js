@@ -1,5 +1,3 @@
-
-
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -18,33 +16,32 @@ import { useState } from 'react';
 
 
 
-
-
 const columns = [
-  { id: 'logo', label: '', },
-  { id: 'name', label: 'Name', minWidth: 150, align: 'left' },
+  { id: 'logo', label: '', minWidth: 170 },
+  { id: 'rank', label: 'Rank', minWidth: 100, align: 'left' },
+  { id: 'name', label: 'Name', minWidth: 100, align: 'left' },
   {
     id: 'symbol',
     label: 'Symbol',
-    minWidth: 130,
+    minWidth: 170,
     align: 'left',
   },
   {
     id: 'price',
     label: 'Price $',
-    minWidth: 100,
+    minWidth: 170,
     align: 'left',
   },
   {
     id: 'market-cap',
     label: 'Market-Cap $',
-    minWidth: 150,
+    minWidth: 170,
     align: 'left',
   },
 ];
 
 
-export default function StickyHeadTable() {
+export default function Top100Table() {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
@@ -58,7 +55,7 @@ export default function StickyHeadTable() {
   };
 
 
-  const coins = useSelector((state) => state);
+  const coins = useSelector((state) => state.coins);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -67,9 +64,8 @@ export default function StickyHeadTable() {
 
 
 
-
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+    <Paper sx={{ width: '75%', overflow: 'hidden' }}>
       <TableContainer sx={{ maxHeight: 490 }} >
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -88,16 +84,18 @@ export default function StickyHeadTable() {
           </TableHead>
           <TableBody>
             {coins
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((coin) => {
                 return (
                   <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
                     <TableCell >
                       <img src={coin.image} alt='coin-img' className='img-table' />
                     </TableCell>
+                    <TableCell id='coin-rank'>{coin.rank}</TableCell>
                     <TableCell id='coin-name'>{coin.name}</TableCell>
                     <TableCell id='coin-symbol'>{coin.symbol}</TableCell>
-                    <TableCell id='coin-price'>{coin.price}</TableCell>
-                    <TableCell id='coin-mc'>{coin.market_cap}</TableCell>
+                    <TableCell id='coin-price'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
+                    <TableCell id='coin-mc'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
                   </TableRow>
                 );
               })}
@@ -105,11 +103,10 @@ export default function StickyHeadTable() {
         </Table>
       </TableContainer>
       <div id='table-pagination'>
-
         <TablePagination
-          rowsPerPageOptions={[]}
+          rowsPerPageOptions={[10, 25, 100]}
           component="div"
-          count={0}
+          count={coins.length}
           rowsPerPage={rowsPerPage}
           page={page}
           onPageChange={handleChangePage}

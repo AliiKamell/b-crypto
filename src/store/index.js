@@ -5,8 +5,14 @@
 
 // export const store = createStore(coinReducer, redux.applyMiddleWare(thunk));
 
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { thunk } from 'redux-thunk';
-import { coinReducer } from './reducers/coin-reducer';
+import { coinReducer, newsReducer } from './reducers/coin-reducer';
 
-export const store = createStore(coinReducer, applyMiddleware(thunk));
+
+const appRedcuder = combineReducers({
+    coins: coinReducer,
+    news: newsReducer
+})
+
+export const store = createStore(appRedcuder, applyMiddleware(thunk));

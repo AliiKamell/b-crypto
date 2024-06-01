@@ -40,7 +40,7 @@ function About() {
                 <label for="email">Your Email:</label><br/>
                 <input type='email' id='email' name='email' placeholder="Enter your email" required></input><br/>
                 <label for="message">Message:</label><br/>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Please enter your message here." required></textarea><br/>
+                <textarea id="message" name="message" rows="4" cols="50" className='textarea' placeholder="Please enter your message here." required></textarea><br/>
                 <input type='submit' value='send' className='btn-about' ></input>
             </div>
         </div>

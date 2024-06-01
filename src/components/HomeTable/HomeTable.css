@@ -1,7 +1,7 @@
 
-.table {
+/* .table {
     max-width: 100%;
-}
+} */
 
 .css-i02g0k-MuiTableCell-root{
     background-color: #040825;
@@ -55,6 +55,9 @@
     height: 35px;
 }
 
+#coin-rank{
+    color: white;
+}
 #coin-name{
     color: white;
 }

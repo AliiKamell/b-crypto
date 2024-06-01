@@ -4,12 +4,31 @@
     align-items: center;
     background-color: #040825;
   }
+  .topL-head{
+display: flex;
+flex-direction: row;
+align-items: center;
+  }
   h1{
     margin-top: 100px;
     color: white;
     padding-bottom: 20px;
   }
+  
+    .losers-icon{
+  color: red;
+  font-size: 30px;
+  margin-top: 95px;
+  margin-left: 10px;
+    }
   .t-table{
   max-width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  }
+
+  .p-TopL{
+    color: white;
+    align-self: center;
+    margin-bottom: 40px;
+    max-width: 75%;
   }
