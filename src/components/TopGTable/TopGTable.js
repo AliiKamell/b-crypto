@@ -39,7 +39,7 @@ const columns = [
 
 
 export default function TopGainersTable() {
- 
+
   const coins = useSelector((state) => state.coins);
   const dispatch = useDispatch()
 
@@ -72,23 +72,26 @@ export default function TopGainersTable() {
                   <TableCell>
                     <img src={coin.image} alt='coin-img' className='img-table' />
                   </TableCell>
-                  <TableCell id='coin-name'>{coin.name}</TableCell>
-                  <TableCell id='coin-symbol'>{coin.symbol}</TableCell>
-                  <TableCell id='coin-price'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
-                  <TableCell id='coin-mc'>+{coin.perc_24h}</TableCell>
-                  <TableCell id='coin-mc'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
+                  <TableCell id='table-cell'>{coin.name}</TableCell>
+                  <TableCell id='table-cell'>{coin.symbol}</TableCell>
+                  <TableCell id='table-cell'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
+                  <TableCell id='table-cell'>+{coin.perc_24h}</TableCell>
+                  <TableCell id='table-cell'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
                 </TableRow>
               ))}
           </TableBody>
         </Table>
       </TableContainer>
-      <TablePagination
-        rowsPerPageOptions={0}
-        component="div"
-        count={0}
-        rowsPerPage={0}
-        page={0}
-      />
+      <div id='tableG-pagination'>
+        <TablePagination
+          rowsPerPageOptions={0}
+          component="div"
+          count={0}
+          rowsPerPage={0}
+          page={0}
+          id='table-footer'
+        />
+      </div>
     </Paper>
   );
 }

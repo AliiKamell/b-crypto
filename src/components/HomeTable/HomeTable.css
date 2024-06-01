@@ -1,7 +1,4 @@
 
-/* .table {
-    max-width: 100%;
-} */
 
 .css-i02g0k-MuiTableCell-root{
     background-color: #040825;
@@ -43,7 +40,7 @@
 
 #table-pagination{
     background-color:  #040825;
-    color: red;
+    color: white;
 }
 
 #table-head{
@@ -51,24 +48,15 @@
     color: white;
 }
 
+#table-body{
+    color: white;
+}
+
 .img-table{
     height: 35px;
 }
-
-#coin-rank{
-    color: white;
-}
-#coin-name{
+#table-cell{
     color: white;
 }
 
-#coin-symbol{
-    color: white;
-}
-#coin-price{
-    color: white;
-}
-#coin-mc{
-    color: white;
-}
 

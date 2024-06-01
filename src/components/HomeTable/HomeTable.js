@@ -91,11 +91,11 @@ export default function Top100Table() {
                     <TableCell >
                       <img src={coin.image} alt='coin-img' className='img-table' />
                     </TableCell>
-                    <TableCell id='coin-rank'>{coin.rank}</TableCell>
-                    <TableCell id='coin-name'>{coin.name}</TableCell>
-                    <TableCell id='coin-symbol'>{coin.symbol}</TableCell>
-                    <TableCell id='coin-price'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
-                    <TableCell id='coin-mc'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
+                    <TableCell id='table-cell'>{coin.rank}</TableCell>
+                    <TableCell id='table-cell'>{coin.name}</TableCell>
+                    <TableCell id='table-cell'>{coin.symbol}</TableCell>
+                    <TableCell id='table-cell'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
+                    <TableCell id='table-cell'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
                   </TableRow>
                 );
               })}
