@@ -10,4 +10,9 @@
 
 #table-cell{
     color: white;
+    background-color: red;
+}
+
+#table-body{
+    background-color: #040825;
 }
