@@ -12,7 +12,7 @@ function TopGainers() {
         <FaArrowTrendUp className='head-icon' />
       </div>
       <TopGainersTable />
-      <p className='p-topG'>The table above showcases the top gainers among the top 100 cryptocurrencies over the past 24 hours.</p>
+      <p className='p-topG'>The table above showcases the top 10 gainers among the top 100 cryptocurrencies over the past 24 hours.</p>
     </div>
   )
 }

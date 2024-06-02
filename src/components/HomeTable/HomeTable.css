@@ -20,10 +20,6 @@
     color: white;
 }
 
-.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
-    background-color: #040825;
-    color: white;
-}
 
 .css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon{
     color: white;
@@ -36,6 +32,10 @@
 #table-cell{
     color: white;
     background-color: #040825;
+}
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+    background-color: #040825;
+    color: white;
 }
 
 #table-pagination{
@@ -58,8 +58,3 @@
 #table-cell{
     color: white;
 }
-
-.css-o9ey65{
-    color: white;
-}
-

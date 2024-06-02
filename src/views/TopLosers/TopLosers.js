@@ -11,7 +11,7 @@ function TopLosers() {
         <FaArrowTrendDown className='losers-icon' />
       </div>
       <TopLosersTable />
-      <p className='p-TopL'>The table above showcases the top losers among the top 100 cryptocurrencies over the past 24 hours.</p>
+      <p className='p-TopL'>The table above showcases the top 10 losers among the top 100 cryptocurrencies over the past 24 hours.</p>
     </div>
   )
 }

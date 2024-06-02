@@ -67,6 +67,7 @@ export default function TopGainersTable() {
             {coins
               .filter((coin) => coin.perc_24h > 0) // Filter coins with perc_24h > 0
               .sort((a, b) => b.perc_24h - a.perc_24h)
+              .slice(0, 10)
               .map((coin) => (
                 <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
                   <TableCell>

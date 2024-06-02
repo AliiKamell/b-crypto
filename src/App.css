@@ -94,6 +94,15 @@
 }
 
 @media (max-width: 768px) {
+
+  .sec-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+
   .toolbar {
     display: flex;
     justify-items: center;
@@ -121,11 +130,12 @@
 
   .subtitle-home-1{
     text-align: center;
-    width: 100%;
+    width: 90%;
     justify-content: center;    
     font-size: 15px;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 0px;
+    justify-items: center;
   }
 
 
