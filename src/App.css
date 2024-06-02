@@ -155,7 +155,7 @@
 
 .btn-home{
 margin-top: 150px;
-padding-bottom: 130px;
+padding-bottom: 160px;
 display: flex;
 flex-wrap: nowrap;
 padding-left: 40px;
@@ -362,10 +362,4 @@ font-size: 105%;
   color: black;
   font-weight: bold;
 }
-
-
-@media (max-width: 768px) {
- 
-  
-  }
 
