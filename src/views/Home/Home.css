@@ -12,3 +12,9 @@ padding-bottom: 40px;
     flex-wrap: wrap;
     max-width: 75%;
 }
+
+@media (max-width: 768px) {
+ .p-top100{
+    text-align: justify;
+ }
+}

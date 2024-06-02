@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* margin-top: 100px; */
   color: white;
   padding-bottom: 20px;
 }
@@ -26,7 +25,8 @@ h1{
 
 .p-topG{
   color: white;
-  align-self: center;
+  align-self: center; 
   margin-bottom: 40px;
   max-width: 75%;
+  text-align: justify;
 }

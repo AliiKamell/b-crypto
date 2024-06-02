@@ -40,6 +40,7 @@
   display: flex;
   justify-items: center;
   flex-wrap: nowrap;
+  padding: 0 5px 0 5px;
 }
 
 .btn-nav {
@@ -62,8 +63,6 @@
   background-image: var(--bg-home-image-1);
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 180%;
 }
 
 .sec-1{
@@ -94,6 +93,7 @@
 }
 
 @media (max-width: 768px) {
+  
 
   .sec-1{
     display: flex;
@@ -120,11 +120,15 @@
     border-radius: 5px;    
     font-size: 8px;
   }
+  .btn{
+    padding: 10px;
+
+  }
 
   .title-home-1{
     font-size: 20px;
     text-align: center;
-    width: 100%;
+    width: 95%;
     margin-left: 0px;
   }
 
@@ -151,7 +155,7 @@
 
 .btn-home{
 margin-top: 150px;
-padding-bottom: 190px;
+padding-bottom: 130px;
 display: flex;
 flex-wrap: nowrap;
 padding-left: 40px;
@@ -320,15 +324,13 @@ font-size: 105%;
 
 
 
-/* Styling the 3rd section for the carusel */
+/* Styling the 3rd section for the top 100 coins */
 
 
 .bg-3{
   background-color: #040825;
   background-size: cover;
   background-position: center;
-  /* width: 100%; */
-  height: 150%;
 }
 
 
@@ -362,5 +364,8 @@ font-size: 105%;
 }
 
 
-
+@media (max-width: 768px) {
+ 
+  
+  }
 
