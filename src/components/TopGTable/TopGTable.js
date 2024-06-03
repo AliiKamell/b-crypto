@@ -76,7 +76,7 @@ export default function TopGainersTable() {
                   <TableCell id='table-cell'>{coin.name}</TableCell>
                   <TableCell id='table-cell'>{coin.symbol}</TableCell>
                   <TableCell id='table-cell'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
-                  <TableCell id='table-cell'>+{coin.perc_24h}</TableCell>
+                  <TableCell id='table-cell-gainers'>+{coin.perc_24h}</TableCell>
                   <TableCell id='table-cell'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
                 </TableRow>
               ))}
