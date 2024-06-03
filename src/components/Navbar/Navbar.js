@@ -18,7 +18,7 @@ const pages = ['Home', 'About', 'Pricing', 'Top Gainers', 'Top Losers'];
 const Links = ['/', '/about', '/:id', '/top-gainers', '/top-losers'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function ResponsiveAppBar() {
+function Navbar() {
 
     const [scroll, setScroll] = useState(false);
 
@@ -170,4 +170,4 @@ function ResponsiveAppBar() {
         </AppBar>
     );
 }
-export default ResponsiveAppBar;
+export default Navbar;
