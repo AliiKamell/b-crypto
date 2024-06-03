@@ -137,7 +137,6 @@
     width: 90%;
     justify-content: center;    
     font-size: 15px;
-    /* align-items: center; */
     margin-left: 0px;
     justify-items: center;
   }
@@ -319,7 +318,7 @@ font-size: 105%;
   max-width: 100%;
   max-height: fit-content;
   margin-top: 20px;
-  
+  padding-right: 10px;
 }
 
 

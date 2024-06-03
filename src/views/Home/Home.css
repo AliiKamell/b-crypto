@@ -17,4 +17,8 @@ padding-bottom: 40px;
  .p-top100{
     text-align: justify;
  }
+
+ .card p{
+    padding-right: 10px;
+ }
 }
