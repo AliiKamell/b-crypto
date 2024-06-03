@@ -7,12 +7,14 @@ import Footer from './components/Footer/Footer';
 import TopGainers from './views/TopGainers/TopGainers';
 import TopLosers from './views/TopLosers/TopLosers';
 import About from './views/About/About';
+import ResponsiveAppBar from './components/Navbar/Navbar';
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <ResponsiveAppBar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/top-gainers' element={<TopGainers />} />
