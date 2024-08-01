@@ -27,4 +27,9 @@
 }
 #table-cell{
     color: white;
+    text-decoration: none;
+}
+
+#coinLink{
+    text-decoration: none;
 }

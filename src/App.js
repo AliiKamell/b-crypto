@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router';
 import './App.css';
 import Home from './views/Home/Home';
-import Show from './views/CoinPage/Show';
 import Footer from './components/Footer/Footer';
 import TopGainers from './views/TopGainers/TopGainers';
 import TopLosers from './views/TopLosers/TopLosers';
 import About from './views/About/About';
 import Navbar from './components/Navbar/Navbar';
+import CoinDetails from './views/CoinPage/CoinDetails';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path='/top-gainers' element={<TopGainers />} />
         <Route path='/top-losers' element={<TopLosers />} />
         <Route path='/about' element={<About />} />
-        <Route path='/:id' element={<Show />} />
+        <Route path='/:id' element={<CoinDetails />} />
       </Routes>
       <Footer />
     </div>

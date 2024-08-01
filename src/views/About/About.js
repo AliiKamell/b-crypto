@@ -37,10 +37,10 @@ function About() {
                 <h3>Contact Us</h3>
             </div>
             <div className='input-about'>
-                <label for="email">Your Email:</label><br/>
-                <input type='email' id='email' name='email' placeholder="Enter your email" required></input><br/>
-                <label for="message">Message:</label><br/>
-                <textarea id="message" name="message" rows="4" cols="50" className='textarea' placeholder="Please enter your message here." required></textarea><br/>
+                <label htmlFor  ="email">Your Email:</label><br />
+                <input type='email' id='email' name='email' placeholder="Enter your email" required></input><br />
+                <label htmlFor="message">Message:</label><br />
+                <textarea id="message" name="message" rows="4" cols="50" className='textarea' placeholder="Please enter your message here." required></textarea><br />
                 <input type='submit' value='send' className='btn-about' ></input>
             </div>
         </div>

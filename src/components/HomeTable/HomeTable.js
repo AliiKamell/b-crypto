@@ -8,11 +8,12 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { useEffect } from 'react';
-import { fetchCoin } from '../../store/actions/coin-action';
+import { fetchCoins } from '../../store/actions/coin-action';
 import { useDispatch } from 'react-redux';
 import './HomeTable.css';
 import { useSelector } from "react-redux"
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -59,7 +60,7 @@ export default function Top100Table() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCoin())
+    dispatch(fetchCoins())
   }, [dispatch])
 
 
@@ -89,13 +90,16 @@ export default function Top100Table() {
                 return (
                   <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
                     <TableCell >
-                      <img src={coin.image} alt='coin-img' className='img-table' />
+                      <Link to={`/${coin.rank}`}>
+                        <img src={coin.image} alt='coin-img' className='img-table' />
+                      </Link>
                     </TableCell>
-                    <TableCell id='table-cell'>{coin.rank}</TableCell>
-                    <TableCell id='table-cell'>{coin.name}</TableCell>
-                    <TableCell id='table-cell'>{coin.symbol}</TableCell>
-                    <TableCell id='table-cell'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
-                    <TableCell id='table-cell'>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</TableCell>
+                    <TableCell id='table-cell'>  <Link to={`/${coin.rank}`}>
+                    {coin.rank}</Link></TableCell>
+                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}>{coin.name}</Link></TableCell>
+                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}>{coin.symbol}</Link></TableCell>
+                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}  id='coinLink'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link></TableCell>
+                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link></TableCell>
                   </TableRow>
                 );
               })}

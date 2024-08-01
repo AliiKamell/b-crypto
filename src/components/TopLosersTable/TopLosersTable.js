@@ -10,7 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import './TopLT.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchCoin } from '../../store/actions/coin-action';
+import { fetchCoins } from '../../store/actions/coin-action';
 
 
 
@@ -46,7 +46,7 @@ export default function TopLosersTable() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchCoin())
+    dispatch(fetchCoins())
   }, [dispatch])
 
   return (

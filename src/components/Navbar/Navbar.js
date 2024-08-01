@@ -14,8 +14,8 @@ import { useState } from 'react';
 import './Navbar.css'
 import { useEffect } from 'react';
 
-const pages = ['Home', 'About', 'Pricing', 'Top Gainers', 'Top Losers'];
-const Links = ['/', '/about', '/:id', '/top-gainers', '/top-losers'];
+const pages = ['Home', 'Pricing', 'Top Gainers', 'Top Losers', 'About'];
+const Links = ['/', '/:id', '/top-gainers', '/top-losers', '/about'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {

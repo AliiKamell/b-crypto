@@ -26,10 +26,9 @@ export const getNews = (news) => {
 }
 
 
-export const fetchCoin = () => {
+export const fetchCoins = () => {
     return async (dispatch) => {
         try {
-
             const res = await axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd');
             const coins = res.data.map(coin => ({
                 name: coin.name,
@@ -39,7 +38,12 @@ export const fetchCoin = () => {
                 price: coin.current_price,
                 market_cap: coin.market_cap,
                 perc_24h: coin.price_change_percentage_24h,
-                rank: coin.market_cap_rank
+                rank: coin.market_cap_rank,
+                total_supply: coin.total_supply,
+                volume: coin.total_volume,
+                heigh_24h: coin.high_24h,
+                low_24h: coin.low_24h,
+                circulating_supply: coin.circulating_supply
             }))
             dispatch(getCoins(coins))
         }

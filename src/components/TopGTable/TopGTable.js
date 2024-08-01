@@ -10,7 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import './TopGT.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchCoin } from '../../store/actions/coin-action';
+import { fetchCoins } from '../../store/actions/coin-action';
 
 
 const columns = [
@@ -44,7 +44,7 @@ export default function TopGainersTable() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchCoin())
+    dispatch(fetchCoins())
   }, [dispatch])
 
   return (
