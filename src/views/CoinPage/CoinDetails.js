@@ -11,12 +11,12 @@ function CoinDetails() {
 
   const { id } = useParams();
 
-  const coin = coins.find((coin) => toString(coin.rank) === id);
+  const coin = coins.find((coin) => coin.rank === Number(id));
 
   useEffect(() => {
-    console.log(id);
+    console.log(coins);
     dispatch(fetchCoins())
-  }, [dispatch, id]);
+  }, [dispatch]);
 
 
   return (

@@ -41,3 +41,7 @@
 path{
     color: white;
 }
+
+#table-cell:hover{
+    color: aqua;
+}
