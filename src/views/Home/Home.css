@@ -13,12 +13,6 @@ flex-direction: column;
 padding-bottom: 40px;
 }
 
-.p-top100{
-    color: white;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    max-width: 75%;
-}
 
 @media (max-width: 768px) {
  .p-top100{
@@ -340,3 +334,10 @@ padding-bottom: 40px;
  }
  
  
+.p-top100{
+  color: white;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  max-width: 75%;
+  padding: 5px;
+}

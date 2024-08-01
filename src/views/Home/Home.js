@@ -84,6 +84,7 @@ function Home() {
             <div className='top100T'>
                 <Top100Table />
                 <p className='p-top100'>The table above highlights the 100 top cryptocurrencies based on their market cap</p>
+                <p className='p-top100'>Click a coin for more details.</p>
             </div>
         </main >
     )

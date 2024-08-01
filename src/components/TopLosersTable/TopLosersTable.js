@@ -72,7 +72,7 @@ export default function TopLosersTable() {
               .slice(0, 10)
               .map((coin) => (
                 <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
-                  <TableCell>
+                  <TableCell >
                     <img src={coin.image} alt='coin-img' className='img-table' />
                   </TableCell>
                   <TableCell id='table-cell'>{coin.name}</TableCell>

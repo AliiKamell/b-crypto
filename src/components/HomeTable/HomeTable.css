@@ -43,5 +43,9 @@ path{
 }
 
 #table-cell:hover{
-    color: aqua;
+font-size: large;
+}
+
+.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input{
+    color: white;
 }

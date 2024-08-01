@@ -89,7 +89,7 @@ export default function Top100Table() {
               .map((coin) => {
                 return (
                   <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
-                    <TableCell >
+                    <TableCell id='table-cell' >
                       <Link to={`/${coin.rank}`}>
                         <img src={coin.image} alt='coin-img' className='img-table' />
                       </Link>
