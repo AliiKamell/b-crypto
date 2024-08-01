@@ -61,7 +61,7 @@ export default function Top100Table() {
 
   useEffect(() => {
     dispatch(fetchCoins())
-  }, [])
+  }, [dispatch])
 
 
 
