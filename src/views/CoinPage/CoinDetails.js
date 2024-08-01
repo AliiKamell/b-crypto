@@ -14,7 +14,6 @@ function CoinDetails() {
   const coin = coins.find((coin) => coin.rank === Number(id));
 
   useEffect(() => {
-    console.log(coins);
     dispatch(fetchCoins())
   }, [dispatch]);
 
