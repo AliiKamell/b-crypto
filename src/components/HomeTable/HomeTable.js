@@ -61,7 +61,7 @@ export default function Top100Table() {
 
   useEffect(() => {
     dispatch(fetchCoins())
-  }, [dispatch])
+  }, [])
 
 
 
@@ -90,16 +90,16 @@ export default function Top100Table() {
                 return (
                   <TableRow role="checkbox" tabIndex={-1} key={coin.id} id='table-body'>
                     <TableCell >
-                      <Link to={`/${coin.rank}`}>
+                      <Link  to={`/${coin.rank}`}>
                         <img src={coin.image} alt='coin-img' className='img-table' />
                       </Link>
                     </TableCell>
-                    <TableCell id='table-cell'>  <Link to={`/${coin.rank}`}>
+                    <TableCell id='table-cell'>  <Link className='tabel-link' to={`/${coin.rank}`}>
                     {coin.rank}</Link></TableCell>
-                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}>{coin.name}</Link></TableCell>
-                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}>{coin.symbol}</Link></TableCell>
-                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}  id='coinLink'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link></TableCell>
-                    <TableCell id='table-cell'><Link to={`/${coin.rank}`}>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link></TableCell>
+                    <TableCell id='table-cell'><Link className='tabel-link' to={`/${coin.rank}`} >{coin.name}</Link></TableCell>
+                    <TableCell id='table-cell'><Link className='tabel-link' to={`/${coin.rank}`}>{coin.symbol}</Link></TableCell>
+                    <TableCell id='table-cell'><Link className='tabel-link' to={`/${coin.rank}`}  id='coinLink'>{coin.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link></TableCell>
+                    <TableCell id='table-cell'><Link className='tabel-link' to={`/${coin.rank}`}>{coin.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link></TableCell>
                   </TableRow>
                 );
               })}

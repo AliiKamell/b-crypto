@@ -9,13 +9,14 @@ function CoinDetails() {
   const coins = useSelector((state) => state.coins);
   const dispatch = useDispatch();
 
-  const { id } = useParams()
+  const { id } = useParams();
 
-  const coin = coins.find((coin) => toString(coin.rank) === id)
+  const coin = coins.find((coin) => toString(coin.rank) === id);
 
   useEffect(() => {
+    console.log(id);
     dispatch(fetchCoins())
-  }, [dispatch])
+  }, [dispatch, id]);
 
 
   return (
